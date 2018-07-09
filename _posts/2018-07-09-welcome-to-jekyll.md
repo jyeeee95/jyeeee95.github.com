@@ -1,7 +1,6 @@
 ---
 layout: post
 title:Github에 블로그 만들기 (by Jekyll)
-categories:Github
 Date:2018-07-09
 ---
 
@@ -88,7 +87,7 @@ Jekyll(이하 지킬)을 통해 Github에 정적 블로그(HTML 웹사이트)를
 
    : 웹브라우저 주소창에 `localhost:4000` 을 입력해보면 디폴트로 생성된 블로그를 볼 수 있다.
 
-   ![스크린샷 2018-07-10 오전 2.06.36](/Users/jyeeee95/Desktop/스크린샷 2018-07-10 오전 2.06.36.png)
+   <img src="/images/fulls/01.jpg" class="fit image">
 
 
 
@@ -102,15 +101,15 @@ Jekyll(이하 지킬)을 통해 Github에 정적 블로그(HTML 웹사이트)를
 
 1. 깃허브에서 ***나의깃허브아이디.github.com*** 이라는 이름으로 New repository를 생성한다.
 
-![스크린샷 2018-07-10 오전 2.31.48](/Users/jyeeee95/Desktop/스크린샷 2018-07-10 오전 2.31.48.png)
+<img src="/images/fulls/02.jpg" class="fit image">
 
 
 
-2. repository URL을 복사한다.
+2. repository URL을 복사한다.!	
 
-   ![스크린샷 2018-07-10 오전 2.37.31](/Users/jyeeee95/Desktop/스크린샷 2018-07-10 오전 2.37.31.png)
+   <img src="/images/fulls/03.jpg" class="fit image">
 
-
+   
 
 3. 터미널로 돌아가서, repository를 연결하고 push 해준다.
 
@@ -156,7 +155,7 @@ Jekyll(이하 지킬)을 통해 Github에 정적 블로그(HTML 웹사이트)를
 
 2. 내가 원하는 테마를 사이트에서 고르고 파일을 다운로드 한다.
 
-   ![스크린샷 2018-07-10 오전 2.54.02](/Users/jyeeee95/Desktop/스크린샷 2018-07-10 오전 2.54.02.png)
+   <img src="/images/fulls/04.jpg" class="fit image">
 
 
 
@@ -184,11 +183,13 @@ Jekyll(이하 지킬)을 통해 Github에 정적 블로그(HTML 웹사이트)를
 
 5. 서버에서 페이지가 제대로 구동되는지 확인한다.
 
-   : 웹브라우저 주소창에 `localhost:4000` 을 입력해보면 테마가 바뀐 블로그를 볼 수 있다. ![스크린샷 2018-07-10 오전 3.09.27](/Users/jyeeee95/Desktop/스크린샷 2018-07-10 오전 3.09.27.png)
+   : 웹브라우저 주소창에 `localhost:4000` 을 입력해보면 테마가 바뀐 블로그를 볼 수 있다. 
+
+   <img src="/images/fulls/05.jpg" class="fit image">
 
    *(참고)* `localhost:4000` 을 입력했는데 404 와 같이 빈 창이 나온다면, `_config.yml` 파일을 확인해봐야 한다.
 
-   ![스크린샷 2018-07-10 오전 3.16.26](/Users/jyeeee95/Desktop/스크린샷 2018-07-10 오전 3.16.26.png)
+   <img src="/images/fulls/06.jpg" class="fit image">
 
    여기서 baseurl이 ""로 비어있지 않다면 쌍따옴표 사이를 비우고 저장한 후 다시 빌드하면 된다. 혹은 "/blog"라고 되어 있다면 `localhost:4000/blog` 라고 주소를 입력해보면 정상적으로 볼 수 있다.
 
@@ -219,3 +220,4 @@ Jekyll(이하 지킬)을 통해 Github에 정적 블로그(HTML 웹사이트)를
 
 블로그에 테마 설정까지 끝났다면, 세부 사항을 내 것으로 업데이트 해주어야 한다. README.md 파일을 참고하면 된다. `_config.yml` 파일에서 블로그의 타이틀 등을 변경할 수 있고, 이미지 파일 변경을 통해 프로필 사진도 등록할 수 있다!
 
+<img src="/images/fulls/07.jpg" class="fit image">
