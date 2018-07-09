@@ -125,7 +125,7 @@ Jekyll(이하 지킬)을 통해 Github에 정적 블로그(HTML 웹사이트)를
    # commit and push
    git add .
    git commit -m "Create blog"
-   git push origin master
+   git push -u origin master
    ~~~
 
 
@@ -202,7 +202,7 @@ Jekyll(이하 지킬)을 통해 Github에 정적 블로그(HTML 웹사이트)를
    # commit and push
    git add .
    git commit -m "Change Theme"
-   git push origin master
+   git push -u origin master
    ~~~
 
 
