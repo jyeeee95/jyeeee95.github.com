@@ -1,52 +1,26 @@
-title: Wendell Thomas
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-permalink: ':title/'
-blog_theme: dark # Or use dark
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
 
-# Profile information
-name: Wendell Thomas
-tagline: Full Stack Developer
-about-description: # Add Discription
-pic: 79.jpg  # Place a 200x200 picture inside /assets/img/ folder and provide the name of the file below
+# Permalinks
+permalink:        pretty
+relative_permalinks: true
 
-# Contact links
-email: artemsheludko@tuta.io # Add your Email address
-phone: 044 825 5523 # Add your Phone number
-website: artemsheludko.pw # Add your website, do not add http://
-linkedin: # Add your Linkedin handle
-github: artemsheludko # Add your Github handle
-twitter: '@artemsheludko_' # Add your Twitter handle
+# Setup
+title:            Hyde
+tagline:          'A Jekyll theme'
+description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
+url:              http://hyde.getpoole.com
+baseurl:          /
 
-# Tracker
-analytics:
+author:
+  name:           'Mark Otto'
+  url:            https://twitter.com/mdo
 
-# Comments
-discus-identifier: # Add your Disqus identifier
+paginate:         5
 
-# Important settings
-assets:
-  sources:
-    - assets/fonts
-    - assets/img
-    - assets/js
-    - assets/stylesheets
+# Custom vars
+version:          2.1.0
 
-# Build settings
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - README.md
-
-gems:
-  - jekyll-feed
-  - jekyll-assets
-exclude:
-  - Gemfile
-  - Gemfile.lock
-
-include: [_pages]
+github:
+  repo:           https://github.com/poole/hyde
