@@ -1,25 +1,28 @@
 ---
 layout: post
-title:Github에 블로그 만들기 (by Jekyll)
-Date:2018-07-09
+title: "Github에 블로그 만들기 (by Jekyll)"
+description: "Jekyll을 통해 Github에 정적 블로그를 만들어보자."
+modified: 2018-07-09
+tags: [github, jekyll, blog]
+Image:
+    feature: images/07.jpg
 ---
-
-# Github에 블로그 만들기 (by Jekyll)
 
 Jekyll(이하 지킬)을 통해 Github에 정적 블로그(HTML 웹사이트)를 만들어보자. 지킬은 루비 스크립트로 만들어져 있으나, 블로그를 만드는데에 있어 루비를 알 필요는 없다. 다음 과정은 Mac OS를 기준으로 진행된다.
 
 
+<br />
 
 ## 지킬 설치
 
 1. Mac OS는 루비가 이미 설치되어 있다.
 
-   ~~~ 
+   ~~~
    # ruby 버전 확인
    ruby -v
    ~~~
 
-   
+
 
 2. 지킬 설치를 위해 Xcode의 설치가 필요하다. (이미 설치되어 있다면 생략)
 
@@ -28,11 +31,11 @@ Jekyll(이하 지킬)을 통해 Github에 정적 블로그(HTML 웹사이트)를
    xcode-select --install
    ~~~
 
-   
+
 
 3. 지킬을 설치한다.
 
-   : 이 과정에서 permission error가 발생하면 ***sudo***를 앞에 붙여 입력한다.
+   : 이 과정에서 permission error가 발생하면 ***sudo*** 를 앞에 붙여 입력한다.
 
    ~~~
    # jekyll 설치
@@ -42,6 +45,7 @@ Jekyll(이하 지킬)을 통해 Github에 정적 블로그(HTML 웹사이트)를
 
 
 
+<br />
 
 ## 새로운 페이지 생성하기
 
@@ -57,15 +61,15 @@ Jekyll(이하 지킬)을 통해 Github에 정적 블로그(HTML 웹사이트)를
    jekyll new 나의깃허브아이디.github.com
    ~~~
 
-   
+
 
 2. 디렉토리로 이동한다
 
-   ~~~ 
+   ~~~
    cd ~/나의깃허브아이디.github.com
    ~~~
 
-   
+
 
 3. 서버를 구동시킨다.
 
@@ -81,7 +85,7 @@ Jekyll(이하 지킬)을 통해 Github에 정적 블로그(HTML 웹사이트)를
    bundle exec jekyll serve
    ~~~
 
-   
+
 
 4. 서버에서 페이지가 제대로 구동되는지 확인한다.
 
@@ -92,6 +96,7 @@ Jekyll(이하 지킬)을 통해 Github에 정적 블로그(HTML 웹사이트)를
 
 
 
+<br />
 
 ## 내 깃허브에 연동시키기
 
@@ -105,22 +110,22 @@ Jekyll(이하 지킬)을 통해 Github에 정적 블로그(HTML 웹사이트)를
 
 
 
-2. repository URL을 복사한다.!	
+2. repository URL을 복사한다.!
 
    <img src="/images/fulls/03.jpg" class="fit image">
 
-   
+
 
 3. 터미널로 돌아가서, repository를 연결하고 push 해준다.
 
-   : 터미널에서 현재 위치는 *~/나의깃허브아이디.github.com* 이여야 한다. 
+   : 터미널에서 현재 위치는 *~/나의깃허브아이디.github.com* 이여야 한다.
 
    ~~~
    # connect repository
    git init
    git remote add origin *복사한 repository URL*
    git remote -v
-   
+
    # commit and push
    git add .
    git commit -m "Create blog"
@@ -136,6 +141,7 @@ Jekyll(이하 지킬)을 통해 Github에 정적 블로그(HTML 웹사이트)를
 
 
 
+<br />
 
 ## 지킬 테마 설정하기
 
@@ -167,7 +173,7 @@ Jekyll(이하 지킬)을 통해 Github에 정적 블로그(HTML 웹사이트)를
 
 4. 터미널로 돌아가서 빌드를 진행한다.
 
-   : 터미널에서 현재 위치는 *~/나의깃허브아이디.github.com* 이여야 한다. 
+   : 터미널에서 현재 위치는 *~/나의깃허브아이디.github.com* 이여야 한다.
 
    ~~~
    # 둘 중 하나를 이용
@@ -179,11 +185,11 @@ Jekyll(이하 지킬)을 통해 Github에 정적 블로그(HTML 웹사이트)를
 
    *(참고 2)* 루비의 버전이 문제라면 **bundle update** 를 입력하여 업데이트 해주면 된다.
 
-   
+
 
 5. 서버에서 페이지가 제대로 구동되는지 확인한다.
 
-   : 웹브라우저 주소창에 `localhost:4000` 을 입력해보면 테마가 바뀐 블로그를 볼 수 있다. 
+   : 웹브라우저 주소창에 `localhost:4000` 을 입력해보면 테마가 바뀐 블로그를 볼 수 있다.
 
    <img src="/images/fulls/05.jpg" class="fit image">
 
@@ -197,7 +203,7 @@ Jekyll(이하 지킬)을 통해 Github에 정적 블로그(HTML 웹사이트)를
 
 6. 터미널로 돌아가서 내 repository로 테마 파일을 푸시해준다.
 
-   : 터미널에서 현재 위치는 *~/나의깃허브아이디.github.com* 이여야 한다. 
+   : 터미널에서 현재 위치는 *~/나의깃허브아이디.github.com* 이여야 한다.
 
    ~~~
    # commit and push
@@ -210,11 +216,12 @@ Jekyll(이하 지킬)을 통해 Github에 정적 블로그(HTML 웹사이트)를
 
 7. 깃허브에서 commit 이 잘 되었는지 확인하고 블로그 생성을 확인한다.
 
-   : `나의깃허브아이디.github.io` 에서 내 블로그를 볼 수 있다. 연동에는 5분 이상의 시간이 걸릴 수 있다. *(조금 기다려보자 꼭!!!!!222)
+   : `나의깃허브아이디.github.io` 에서 내 블로그를 볼 수 있다. 연동에는 5분 이상의 시간이 걸릴 수 있다. *(조금 기다려보자 꼭!!!!!222)*
 
 
 
 
+<br />
 
 ## 테마 내 것으로 만들기
 
