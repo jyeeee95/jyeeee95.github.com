@@ -31,4 +31,4 @@ sudo rm -rf /var/db/receipts/com.mysql.*
 ~~~
 <br />
 
-3. MySQL이 삭제 되었다! 재설치가 필요하다면 [다음 포스트]()를 참고하면 된다. :-)
+3. MySQL이 삭제 되었다! 재설치가 필요하다면 [다음 포스트](https://jyeeee95.github.io/welcome-to-mysql/)를 참고하면 된다. :-)
