@@ -4,8 +4,6 @@ title: "Github에 블로그 만들기 (by Jekyll)"
 description: "Jekyll을 통해 Github에 정적 블로그를 만들어보자."
 modified: 2018-07-09
 tags: [github, jekyll, blog]
-Image:
-    feature: images/07.jpg
 ---
 
 Jekyll(이하 지킬)을 통해 Github에 정적 블로그(HTML 웹사이트)를 만들어보자. 지킬은 루비 스크립트로 만들어져 있으나, 블로그를 만드는데에 있어 루비를 알 필요는 없다. 다음 과정은 Mac OS를 기준으로 진행된다.
